@@ -199,13 +199,14 @@ void problem2()
         for(long long j = 0; j < setSize; j++)
         {
             if(j==0)
-                cout << "Please Insert the " << i+1 << "st element";
+                cout << "Please Insert the " << j+1 << "st element";
             else if(j==1)
-                cout << "Please Insert the " << i+1 << "nd element";
+                cout << "Please Insert the " << j+1 << "nd element";
             else if(j==2)
-                cout << "Please Insert the " << i+1 << "rd element";
+                cout << "Please Insert the " << j+1 << "rd element";
             else
-                cout << "Please Insert the " << i+1 << "th element";
+                cout << "Please Insert the " << j+1 << "th element";
+            cout << endl;
             string buffer;
             cin >> buffer;
             hashing[i][dict1[buffer]] = 1;
@@ -253,7 +254,7 @@ void problem1()
         cout << clearbit(num, pos);
     else if(choice == 4){
         int op;
-        cout << "Enter the opartion you want" << endl;
+        cout << "Enter the operation you want" << endl;
         cin >> op;
         bool x;
         if(op==0) x = false;
@@ -270,10 +271,10 @@ void problem3()
     if(choice == 1){
         unsigned int x;
         cin >> x;
-        cout << count_ones(x);
+        cout << count_ones(x) << endl;
     }
     else if(choice == 2)
-        cout << find_single_number();
+        cout << find_single_number() << endl;
 }
 int main()
 {
